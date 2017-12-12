@@ -1,0 +1,105 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(images/congruent_pentagon.png);
+}
+
+h1 {
+	height: 75px;
+	width: 250px;
+	background-color: chocolate;
+	color: white;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 10px; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.rules {
+	background-color: peachpuff;
+	color: olivedrab;
+	font-weight: bold;
+	font-family: "Times New Roman", Georgia, Serif;
+	height: 375px;
+	width: 425px;
+	padding: 10px;
+}
+
+.secNum {
+	height: 100px;
+	width: 200px;
+	font-size: 28px;
+	background-color: MediumSeaGreen;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	float: left;
+}
+
+.winLoss {
+	height: 100px;
+	width: 80px;
+	background-color: Cyan;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+	position: absolute;
+	left: 225px;
+}
+
+.jewel {
+	height: 75px;
+	width: 75px;
+}
+
+#diamond {
+	position: relative;
+	top: 125px;
+	right: 210px;
+}
+
+#ruby {
+	position: relative;
+	top: 125px;
+	right: 200px;
+}
+
+#yellowSapp {
+	position: relative;
+	top: 125px;
+	right: 190px;
+}
+
+#emerald {
+	position: relative;
+	top: 125px;
+	right: 180px;
+}
+
+.message {
+	height: 60px;
+	width: 215px;
+	background-color: Teal;
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	top: 130px;
+}
+
+.totScore {
+	height: 200px;
+	width: 215px;
+	font-weight: bold;
+	color: white;
+	background-color: Teal;
+	padding-left: 5px;
+	position: relative;
+	top: 140px;
+	font-size: 28px
+}
