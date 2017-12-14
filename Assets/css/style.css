@@ -3,33 +3,55 @@
 }
 
 body {
-	background-image: url(images/congruent_pentagon.png);
+	background-image: url("../images/congruent_pentagon.png");
+	font-family: 'Abril Fatface', cursive;
 }
 
-h1 {
-	height: 75px;
-	width: 250px;
-	background-color: chocolate;
-	color: white;
-	font-size: 28px;
-	text-align: center;
-	margin-top: 0px;
-	margin-bottom: 10px; 
-	padding-top: 20px;
-	padding-bottom: 20px;
+.jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  font-family: 'Abril Fatface', cursive;
+  background-color: #b03060;
+  font-size: 50px;
 }
 
-.rules {
-	background-color: peachpuff;
+.container {
+	font-family: 'Lalezar', cursive;
+}
+
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid white;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #b03060;
+  color: white;
+  text-align: center;
+}
+
+.panel {
+  	background-color: peachpuff;
 	color: olivedrab;
 	font-weight: bold;
-	font-family: "Times New Roman", Georgia, Serif;
 	height: 375px;
 	width: 425px;
 	padding: 10px;
 }
 
-.secNum {
+/*.rules {
+	background-color: peachpuff;
+	color: olivedrab;
+	font-weight: bold;
+	height: 375px;
+	width: 425px;
+	padding: 10px;
+}*/
+
+#secretNumber {
 	height: 100px;
 	width: 200px;
 	font-size: 28px;
@@ -90,16 +112,41 @@ h1 {
 	font-weight: bold;
 	position: relative;
 	top: 130px;
+	padding-left: 5px;
 }
 
-.totScore {
+#totalScore {
 	height: 200px;
 	width: 215px;
 	font-weight: bold;
 	color: white;
 	background-color: Teal;
+	margin-bottom: 10px;
 	padding-left: 5px;
 	position: relative;
 	top: 140px;
 	font-size: 28px
 }
+
+@media screen and (max-width: 555px) {
+	.jewel {
+		position: static;
+		width: 50px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	body {
+		width: 100%;
+	}
+
+	.rules {
+		width: 300px;
+	}
+
+	.jewel {
+		position: static;
+		width: 35px;
+	}
+}
+
