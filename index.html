@@ -14,35 +14,84 @@
 		<h1 class="jumbotron">CRYSTALS COLLECTOR!</h1>
 	</header>
 	<div class="container">
-		<h2 class="panel-header">Rules of the Game!</h2>
-		<section class="panel" class="rules">
-			<p>You will be given a random number at the start of the game.</p>
-			
-			<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-			
-			<p>You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.</p>
-			
-			<p>The value of each crystal is hidden from you until you click on it.</p>
-			
-			<p>Each time when the game starts, the game will change the values of each crystal.</p>
-		</section>
 
-		<h3 id="secretNumber"></h3>
-		<div class="winLoss">
-			<p id="win">Wins: </p>
-			<p id="loss">Losses: </p>
+		<div class="row">
+
+			<div class="col-lg-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Rules of the Game!</h2>
+					</div>
+					<div class="panel-body" class="rules">
+						<p>You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number. The value of each crystal is hidden from you until you click on it. Each time when the game starts, the game will change the values of each crystal.</p>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
-		<img class="jewel" id="diamond" src="Assets/images/diamond.png">
-		<img class="jewel" id="ruby" src="Assets/images/ruby.png">
-		<img class="jewel" id="yellowSapp" src="Assets/images/YellowSapphire.jpg">
-		<img class="jewel" id="emerald" src="Assets/images/Emerald.png">
+		<div class="row">
 
-		<div class="message">
-			<p>Your total score is:</p>
+			<div class="col-lg-3">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Match this Number!</h3>
+					</div>
+					<div class="panel-body">
+						<h3 id="secretNumber"> </h3>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-3">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">The Score You've Got</h3>
+					</div>
+					<div class="panel-body">
+						<h3 id="totalScore"> </h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Selectable Jewels</h3>
+					</div>
+					<div class="panel-body">
+						<img class="jewel" id="diamond" src="Assets/images/diamond.png">
+						<img class="jewel" id="ruby" src="Assets/images/ruby.png">
+						<img class="jewel" id="yellowSapp" src="Assets/images/YellowSapphire.jpg">
+						<img class="jewel" id="emerald" src="Assets/images/Emerald.png">
+					</div>
+				</div>
 		</div>
-		<h3 id="totalScore"></h3>
+
 	</div>
+
+	<div class="row">
+		<div class="col-lg-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Wins!</h3>
+				</div>
+				<div class="panel-body">
+					<p id="win"> </p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Losses...</h3>
+				</div>
+				<div class="panel-body">
+					<p id="win"> </p>
+				</div>
+			</div>
+		</div>
+
 <script type="text/javascript" src="Assets/javascript/game.js"></script>
 </body>
 </html>

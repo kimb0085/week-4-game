@@ -4,10 +4,10 @@ $(document).ready(function() {
 	var secretNumber = 0;
 	var winCounter = 0;
 	var lossCounter = 0;
-	var blue = 0;
-	var red = 0;
-	var yellow = 0;
-	var green = 0;
+	var blueValue = 0;
+	var redValue = 0;
+	var yellowValue = 0;
+	var greenValue = 0;
 	var totalScore = 0;
 
 	//Get the game ready to play and prepped to reset
@@ -16,53 +16,51 @@ $(document).ready(function() {
 	var prepGame = function() {    
 		totalScore = 0;
         secretNumber = Math.floor(Math.random() * (120 - 19)) + 19; 
-        console.log(secretNumber);
-    
+        // console.log(secretNumber);
+   	
 
 	//Generate a random number per jewel between 1-12
-
-		blue = Math.floor(Math.random() * 12 - 1 + 1) + 1;
-		console.log(blue);
-		yellow = Math.floor(Math.random() * 12 - 1 + 1) + 1;
-		console.log(yellow);
-		red = Math.floor(Math.random() * 12 - 1 + 1) + 1;
-		console.log(red);
-		green = Math.floor(Math.random() * 12 - 1 + 1) + 1;
-		console.log(green);
+	
+		blueValue = Math.floor(Math.random() * 12 - 1 + 1) + 1;
+		// console.log(blueValue);
+		redValue = Math.floor(Math.random() * 12 - 1 + 1) + 1;
+		// console.log(redValue);
+		yellowValue = Math.floor(Math.random() * 12 - 1 + 1) + 1;
+		// console.log(yellowValue);
+		greenValue = Math.floor(Math.random() * 12 - 1 + 1) + 1;
+		// console.log(greenValue);
 
 		$("#secretNumber").html(secretNumber);
-    }
+	}
+   
 	//The player will click a jewel to identify the number assigned to that jewel
-	prepGame();
-	
 
 	var playGame = function() {
-		totalScore = blue + green + red + yellow;
-		$("#totalScore").html(totalScore);
-		console.log(totalScore);
-	}
-
-	var addNumber = function(blue) {
-		totalScore = totalScore + addNumber;
-	}
 
 		$('#diamond').on("click", function(){
-			totalScore += addNumber;
+			totalScore = totalScore + blueValue;
+			// console.log(blueValue);
+			$("#totalScore").html(blueValue);
 		});
 
 		$('#ruby').on("click", function(){
-			playGame(red);
+			totalScore = totalScore + redValue;
+			// console.log(redValue);
+			$("#totalScore").html(redValue);			
 		});
 
 		$('#yellowSapp').on("click", function(){
-			playGame(yellow);
+			// console.log(yellowValue);
+			$("#totalScore").html(yellowValue);
 		});
 
 		$('#emerald').on("click", function(){
-			playGame(green);
+			// console.log(greenValue);
+			$("#totalScore").html(greenValue);
 		});
 
-	
+	}
+
 
 	playGame();
 
@@ -70,15 +68,21 @@ $(document).ready(function() {
 	//If, they match the random number, then a one will be added to their overall win score and a note will read 'You Won!'
 	//If, they exceed the random number, then a one will be added to the overall loss score and a note will read 'You Lost'
 
-	// if (totalScore === secretNumber) {
-	// 	win++ $("winLoss").html("<h3>You won!</h3");
-		
-	// } else (totalScore > secretNumber) {
-	// 	loss++ $("winLoss").html("<h3>You lost...<h3>")
-	// }
+	if (totalScore === secretNumber) {
+		win++ 
+		$("winLoss").html("<h3>You won!</h3");
+		$("#wins").html('Wins: ' + winCounter);
+		prepGame();
+	} 
+
+	else if (totalScore > secretNumber) {
+		loss++ 
+		$("winLoss").html("<h3>You lost...<h3>");
+		$("#loss").html('Losses: ' + lossCounter);
+		prepGame();
+	}
 
 	//At the end of each game the following numbers will reset/regenerate: the total score and the random generated number/jewel number
-	// $(playGame)[0].reset();
 	
-});
 
+});

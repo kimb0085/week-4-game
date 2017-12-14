@@ -4,7 +4,6 @@
 
 body {
 	background-image: url("../images/congruent_pentagon.png");
-	font-family: 'Abril Fatface', cursive;
 }
 
 .jumbotron {
@@ -21,132 +20,20 @@ body {
 
 .container {
 	font-family: 'Lalezar', cursive;
+	text-align: center;
 }
 
-.panel-heading {
-  padding: 10px 15px;
-  border-bottom: 1px solid white;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  background-color: #b03060;
-  color: white;
-  text-align: center;
+.panel-title { 
+ 	font-size: 25px;
 }
 
-.panel {
-  	background-color: peachpuff;
-	color: olivedrab;
-	font-weight: bold;
-	height: 375px;
-	width: 425px;
-	padding: 10px;
-}
-
-/*.rules {
-	background-color: peachpuff;
-	color: olivedrab;
-	font-weight: bold;
-	height: 375px;
-	width: 425px;
-	padding: 10px;
-}*/
-
-#secretNumber {
-	height: 100px;
-	width: 200px;
-	font-size: 28px;
-	background-color: MediumSeaGreen;
-	margin-top: 10px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	padding-left: 5px;
-	float: left;
-}
-
-.winLoss {
-	height: 100px;
-	width: 80px;
-	background-color: Cyan;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding: 5px;
-	position: absolute;
-	left: 225px;
+.rules {
+ 	text-align: left;
+ 	font-size: 20px;
 }
 
 .jewel {
 	height: 75px;
 	width: 75px;
+	margin-right: 40px;
 }
-
-#diamond {
-	position: relative;
-	top: 125px;
-	right: 210px;
-}
-
-#ruby {
-	position: relative;
-	top: 125px;
-	right: 200px;
-}
-
-#yellowSapp {
-	position: relative;
-	top: 125px;
-	right: 190px;
-}
-
-#emerald {
-	position: relative;
-	top: 125px;
-	right: 180px;
-}
-
-.message {
-	height: 60px;
-	width: 215px;
-	background-color: Teal;
-	font-size: 16px;
-	color: white;
-	font-weight: bold;
-	position: relative;
-	top: 130px;
-	padding-left: 5px;
-}
-
-#totalScore {
-	height: 200px;
-	width: 215px;
-	font-weight: bold;
-	color: white;
-	background-color: Teal;
-	margin-bottom: 10px;
-	padding-left: 5px;
-	position: relative;
-	top: 140px;
-	font-size: 28px
-}
-
-@media screen and (max-width: 555px) {
-	.jewel {
-		position: static;
-		width: 50px;
-	}
-}
-
-@media screen and (max-width: 440px) {
-	body {
-		width: 100%;
-	}
-
-	.rules {
-		width: 300px;
-	}
-
-	.jewel {
-		position: static;
-		width: 35px;
-	}
-}
-
