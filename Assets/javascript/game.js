@@ -40,25 +40,24 @@ $(document).ready(function() {
 		$('#diamond').on("click", function(){
 			totalScore = totalScore + blueValue;
 			// console.log(blueValue);
-			$("#totalScore").html(blueValue);
+			$("#totalScore").html(totalScore);
 		});
 
 		$('#ruby').on("click", function(){
 			totalScore = totalScore + redValue;
 			// console.log(redValue);
-			$("#totalScore").html(redValue);			
+			$("#totalScore").html(totalScore);			
 		});
 
 		$('#yellowSapp').on("click", function(){
 			// console.log(yellowValue);
-			$("#totalScore").html(yellowValue);
+			$("#totalScore").html(totalScore);
 		});
 
 		$('#emerald').on("click", function(){
 			// console.log(greenValue);
-			$("#totalScore").html(greenValue);
+			$("#totalScore").html(totalScore);
 		});
-
 	}
 
 
