@@ -21,13 +21,13 @@ $(document).ready(function() {
 
 	//Generate a random number per jewel between 1-12
 	
-		blueValue = Math.floor(Math.random() * 12 - 1 + 1) + 1;
+		blueValue = Math.floor(Math.random() * (12 - 1)) + 1;
 		// console.log(blueValue);
-		redValue = Math.floor(Math.random() * 12 - 1 + 1) + 1;
+		redValue = Math.floor(Math.random() * (12 - 1)) + 1;
 		// console.log(redValue);
-		yellowValue = Math.floor(Math.random() * 12 - 1 + 1) + 1;
+		yellowValue = Math.floor(Math.random() * (12 - 1)) + 1;
 		// console.log(yellowValue);
-		greenValue = Math.floor(Math.random() * 12 - 1 + 1) + 1;
+		greenValue = Math.floor(Math.random() * (12 - 1)) + 1;
 		// console.log(greenValue);
 
 		$("#secretNumber").html(secretNumber);
@@ -40,19 +40,19 @@ $(document).ready(function() {
 
 		$('#diamond').on("click", function(){
 			totalScore = totalScore + blueValue;
-			// console.log(blueValue);
+			console.log(blueValue);
 			$("#totalScore").html(totalScore);
 
 			if (totalScore === secretNumber) {
 				winCounter++ 
-				$("#wins").html("<h3>You won!</h3");
-				$("#wins").html(winCounter);
+				alert("You won!");
+				$("#win").html(winCounter);
 				prepGame();
 			} 
 
 				else if (totalScore > secretNumber) {
 					lossCounter++ 
-					$("#loss").html("<h3>You lost...<h3>");
+					alert("You lost...");
 					$("#loss").html(lossCounter);
 					prepGame();
 				}
@@ -60,19 +60,19 @@ $(document).ready(function() {
 
 		$('#ruby').on("click", function(){
 			totalScore = totalScore + redValue;
-			// console.log(redValue);
+			console.log(redValue);
 			$("#totalScore").html(totalScore);
 
 			if (totalScore === secretNumber) {
 				winCounter++ 
-				$("#wins").html("<h3>You won!</h3");
-				$("#wins").html(winCounter);
+				alert("You won!");
+				$("#win").html(winCounter);
 				prepGame();
 			} 
 
 				else if (totalScore > secretNumber) {
 					lossCounter++ 
-					$("#loss").html("<h3>You lost...<h3>");
+					alert("You lost...");
 					$("#loss").html(lossCounter);
 					prepGame();
 				}			
@@ -80,19 +80,19 @@ $(document).ready(function() {
 
 		$('#yellowSapp').on("click", function(){
 			totalScore = totalScore + yellowValue;
-			// console.log(yellowValue);
+			console.log(yellowValue);
 			$("#totalScore").html(totalScore);
 
 			if (totalScore === secretNumber) {
 				winCounter++ 
-				$("#wins").html("<h3>You won!</h3");
-				$("#wins").html(winCounter);
+				alert("You won!");
+				$("#win").html(winCounter);
 				prepGame();
 			} 
 
 				else if (totalScore > secretNumber) {
 					lossCounter++ 
-					$("#loss").html("<h3>You lost...<h3>");
+					alert("You lost...");
 					$("#loss").html(lossCounter);
 					prepGame();
 				}
@@ -100,19 +100,19 @@ $(document).ready(function() {
 
 		$('#emerald').on("click", function(){
 			totalScore = totalScore + greenValue;
-			// console.log(greenValue);
+			console.log(greenValue);
 			$("#totalScore").html(totalScore);
 
 			if (totalScore === secretNumber) {
 				winCounter++ 
-				$("#wins").html("<h3>You won!</h3");
-				$("#wins").html(winCounter);
+				alert("You won!");
+				$("#win").html(winCounter);
 				prepGame();
 			} 
 
 				else if (totalScore > secretNumber) {
 					lossCounter++ 
-					$("#loss").html("<h3>You lost...<h3>");
+					alert("You lost...");
 					$("#loss").html(lossCounter);
 					prepGame();
 				}
